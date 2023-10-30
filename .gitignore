@@ -1,0 +1,4 @@
+programs/*.bak*
+programs/*.old*
+programs/eyes.script
+programs/eyes.txt

@@ -1,22 +1,9 @@
-####
-# extract cartesian position from pose
-####
-# returns 3 element vector
-####
-def p2c(p1):
-  return [p1[0], p1[1], p1[2]]
+global phase = 0
+
+def open_communication():
 end
 
-####
-# zero rotations, keep cartesian coordinates
-####
-def zero_rotation(p1):
-  return p[p1[0], p1[1], p1[2], 0, 0, 0]
-end
-
-####
-# zero cartesian coordinates, keep rotation
-####
-def zero_cartesian(p1):
-  return p[0, 0, 0, p1[3], p1[4], p1[5]]
+def get_world_position():
+  phase = (phase + 1/1000) % (2 * 3.14)
+  return p[3 + sin(phase), 3 + cos(phase), 1.8, 0, 0, 0]
 end
