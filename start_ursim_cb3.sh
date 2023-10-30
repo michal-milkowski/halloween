@@ -1,0 +1,1 @@
+docker run --rm -dit -p 30004:30004 -p 5900:5900 -v ./programs:/ursim/programs/halloween --name=cb3 universalrobots/ursim_cb3
